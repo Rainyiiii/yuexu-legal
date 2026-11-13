@@ -8,8 +8,12 @@
 </head>
 <body>
 <main class="wrap">
-  <div class="brand"><div class="moon"></div><div><strong>月序</strong><br><span>YueXu · 隐私政策</span></div></div>
-  <h1>月序隐私政策</h1>
+  <div class="brand"><div class="moon"></div><div><strong>月序 · YueXu</strong><br><span>隐私政策 · Privacy</span></div></div>
+  <nav class="lang-switch" aria-label="Language / 語言">
+    <button type="button" data-set-lang="zh-Hans">简体中文</button><button type="button" data-set-lang="zh-Hant">繁體中文</button><button type="button" data-set-lang="en">English</button>
+  </nav>
+  <section data-lang-block="zh-Hans" lang="zh-Hans">
+<h1>月序隐私政策</h1>
   <p class="meta">生效日期：2026 年 11 月 13 日 · 适用版本：月序 1.0 及以上</p>
 
   <p class="lede">月序把“本地优先”当作产品前提：你的经期、身体感受和用药记录默认只保存在这台设备上。我们不做账号体系，不把健康数据上传到我们的服务器，也不出售你的数据。</p>
@@ -69,10 +73,177 @@
   <p>邮箱：<a href="mailto:ushio0314@163.com">ushio0314@163.com</a><br>
   反馈与常见问题：<a href="support.html">意见反馈</a></p>
 
-  <hr>
-  <h2 class="en">English summary</h2>
-  <p class="en">YueXu is a local-first menstrual cycle and medication tracker. Records are stored on your device only; there is no account, no cloud sync, no advertising, and no third-party analytics. Apple Health access is optional and requested only after you tap “Connect Apple Health”. Calendar access is optional: only user-selected calendars are read for holiday display, never edited or uploaded. Purchases are processed by Apple; we only read verified entitlement status. You can delete records in the app or by uninstalling it. Contact: <a href="mailto:ushio0314@163.com">ushio0314@163.com</a>.</p>
-  <footer>© 2026 月序 · <a href="index.html">返回首页</a> · <a href="terms.html">用户协议</a></footer>
+<footer>© 2026 月序 · <a href="index.html">返回首页</a> · <a href="terms.html">用户协议</a></footer></section><section data-lang-block="zh-Hant" lang="zh-Hant" hidden>
+<h1>月序隱私政策</h1>
+  <p class="meta">生效日期：2026 年 11 月 13 日 · 適用版本：月序 1.0 及以上</p>
+
+  <p class="lede">月序以「本機優先」為產品前提：你的經期、身體感受與用藥紀錄預設只保存在這台裝置上。我們沒有帳號系統，不會把健康資料上傳到我們的伺服器，也不會出售你的資料。</p>
+
+  <h2>1. 我們是誰</h2>
+  <p>月序（YueXu）是一款由個人開發者提供的經期與用藥紀錄 App。隱私相關問題可寄信至 <a href="mailto:ushio0314@163.com">ushio0314@163.com</a>。</p>
+
+  <h2>2. 我們處理哪些資料</h2>
+  <h3>你主動記錄的內容</h3>
+  <ul>
+    <li>經期開始/結束日期、經血量、症狀、心情、備註；</li>
+    <li>藥物名稱、劑量、用藥計畫、服藥紀錄與庫存；</li>
+    <li>提醒設定、外觀設定、App 鎖與隱私模式開關。</li>
+  </ul>
+  <h3>在你授權後才存取的資料</h3>
+  <ul>
+    <li><strong>Apple 健康</strong>：經期、經期症狀與用藥紀錄。只有你點擊「連接 Apple 健康」並授權後，月序才會讀取或寫入相應類型；你可以隨時在系統「健康」App 中撤銷。</li>
+    <li><strong>通知</strong>：用於本機經期與用藥提醒。提醒由 iOS 在裝置上發送，不經過伺服器。</li>
+    <li><strong>Face ID / Touch ID</strong>：僅用於 App 鎖。生物辨識由系統處理，月序不會接觸也不會儲存生物特徵資料。</li>
+    <li><strong>行事曆（選用）</strong>：只有你主動開啟「顯示假日」並授權後，月序才會讀取你選擇的 Apple 行事曆事件標題與日期，用於在週期行事曆中顯示假日。月序不會建立、修改或刪除行事曆事件，不會把經期日期寫入行事曆，也不會上傳行事曆內容。你可以隨時關閉此功能或在系統設定中撤銷行事曆權限。</li>
+  </ul>
+  <h3>購買資訊</h3>
+  <p>Pro 訂閱與永久會員由 Apple 的 App Store 處理。月序只讀取 Apple 驗證後的交易狀態（是否有效、到期時間、是否為永久會員），不會接觸你的金融卡或付款帳號。</p>
+
+  <h2>3. 資料存放在哪裡</h2>
+  <ul>
+    <li>紀錄保存在裝置上的 App 沙盒內（SwiftData 本機資料庫），不設雲端同步。</li>
+    <li>桌面/鎖定畫面小工具透過 App Group 讀取最少的顯示欄位（週期天數、預計下次經期、待服藥次數）；開啟隱私模式後不顯示用藥資訊。</li>
+    <li>你可以主動匯出加密備份（PBKDF2 + AES-256-GCM）。備份檔案由你保存，密碼不會上傳或另行保存。</li>
+    <li>寫入 Apple 健康的資料由系統「健康」App 管理，適用 Apple 的健康資料政策。</li>
+  </ul>
+
+  <h2>4. 我們不做什麼</h2>
+  <ul>
+    <li>不出售、出租或分享你的健康紀錄；</li>
+    <li>不投放廣告，不整合第三方廣告或分析 SDK；</li>
+    <li>不要求註冊帳號，不使用健康資料做廣告画像；</li>
+    <li>不把健康資料上傳到我們的伺服器（我們也沒有這樣的伺服器）。</li>
+  </ul>
+
+  <h2>5. 保留與刪除</h2>
+  <p>紀錄會一直保存在裝置上，直到你在 App 內刪除、清除資料或移除 App。移除 App 會刪除本機資料庫；已匯出的備份檔案需要你自行刪除。Apple 健康中的紀錄請在系統「健康」App 中管理。</p>
+
+  <h2>6. 兒童</h2>
+  <p>月序不是面向 13 歲以下兒童的產品，我們不會有意蒐集兒童的個人資料。如果你認為兒童向我們提供了資料，請聯絡我們刪除。</p>
+
+  <h2>7. 你的權利</h2>
+  <p>你可以在 App 內查看、修改、刪除自己的紀錄，匯出加密備份，或移除 App 刪除全部本機資料。你也可以透過電子郵件聯絡我們，詢問本政策的執行情況。</p>
+
+  <h2>8. 安全</h2>
+  <p>我們使用系統的資料保護、App 鎖與加密備份來降低風險。但任何裝置都存在遺失或被存取的風險，請為裝置設定螢幕鎖定密碼，並妥善保管備份密碼。</p>
+
+  <h2>9. 政策變更</h2>
+  <p>如果資料處理方式發生實質變化，我們會更新本頁並修改生效日期。繼續使用 App 前，請查看最新版本。</p>
+
+  <h2>10. 聯絡我們</h2>
+  <p>電子郵件：<a href="mailto:ushio0314@163.com">ushio0314@163.com</a><br>
+  技術支援與常見問題：<a href="support.html">技術支援</a></p>
+
+<footer>© 2026 月序 · <a href="index.html">返回首頁</a> · <a href="terms.html">使用者協議</a></footer></section><section data-lang-block="en" lang="en" hidden>
+<h1>YueXu Privacy Policy</h1>
+  <p class="meta">Effective: November 13, 2026 · Applies to YueXu 1.0 and later</p>
+
+  <p class="lede">YueXu is built local-first: your period, body and medication records stay on your device by default. There is no account system, we do not upload health data to our servers, and we do not sell your data.</p>
+
+  <h2>1. Who we are</h2>
+  <p>YueXu is a menstrual cycle and medication tracking app provided by an individual developer. For privacy questions, email <a href="mailto:ushio0314@163.com">ushio0314@163.com</a>.</p>
+
+  <h2>2. What data we process</h2>
+  <h3>Information you record</h3>
+  <ul>
+    <li>Period start/end dates, flow, symptoms, mood and notes;</li>
+    <li>Medication names, doses, schedules, dose logs and inventory;</li>
+    <li>Reminder settings, appearance settings, app lock and privacy mode.</li>
+  </ul>
+  <h3>Data accessed only with your permission</h3>
+  <ul>
+    <li><strong>Apple Health</strong>: period, cycle symptoms and medication records. YueXu reads or writes the relevant types only after you tap “Connect Apple Health” and grant access. You can revoke access at any time in the system Health app.</li>
+    <li><strong>Notifications</strong>: used for local period and medication reminders. They are sent by iOS on your device and do not pass through our servers.</li>
+    <li><strong>Face ID / Touch ID</strong>: used only for app lock. Biometric authentication is handled by the system; YueXu cannot access or store your biometric data.</li>
+    <li><strong>Calendar (optional)</strong>: only after you enable “Show holidays” and grant full calendar access does YueXu read the titles and dates of the Apple calendars you select, so it can show holidays in the cycle calendar. YueXu never creates, edits or deletes calendar events, never writes period dates to your calendar, and never uploads calendar contents. You can turn this off or revoke access at any time.</li>
+  </ul>
+  <h3>Purchase information</h3>
+  <p>Pro subscriptions and the lifetime purchase are processed by Apple’s App Store. YueXu only reads Apple-verified entitlement status (active, expiration date, lifetime access). We never receive your payment card or account credentials.</p>
+
+  <h2>3. Where data is stored</h2>
+  <ul>
+    <li>Records are stored in the app sandbox on your device (a local SwiftData database). There is no cloud sync.</li>
+    <li>Home screen and lock screen widgets read a minimal set of display fields through an App Group (cycle day, expected next period, pending dose count). When privacy mode is on, medication details are hidden.</li>
+    <li>You may export an encrypted backup (PBKDF2 + AES-256-GCM). You choose where to save it; the password is never uploaded or stored separately.</li>
+    <li>Data written to Apple Health is managed by the system Health app and subject to Apple’s health data policies.</li>
+  </ul>
+
+  <h2>4. What we do not do</h2>
+  <ul>
+    <li>We do not sell, rent or share your health records;</li>
+    <li>We do not show ads or integrate third-party advertising or analytics SDKs;</li>
+    <li>We do not require an account or use health data for advertising profiles;</li>
+    <li>We do not upload health data to our servers (we do not operate such servers).</li>
+  </ul>
+
+  <h2>5. Retention and deletion</h2>
+  <p>Records remain on your device until you delete them in the app, clear your data or uninstall the app. Uninstalling deletes the local database; exported backup files must be deleted by you. Records in Apple Health are managed in the system Health app.</p>
+
+  <h2>6. Children</h2>
+  <p>YueXu is not directed to children under 13, and we do not knowingly collect children’s personal information. If you believe a child has provided information to us, contact us so we can delete it.</p>
+
+  <h2>7. Your rights</h2>
+  <p>You can view, edit and delete your records in the app, export an encrypted backup, or uninstall the app to delete all local data. You may also email us with questions about how this policy is applied.</p>
+
+  <h2>8. Security</h2>
+  <p>We use system data protection, app lock and encrypted backups to reduce risk. Any device can be lost or accessed by someone else; please set a device passcode and keep your backup password safe.</p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>If our data practices change materially, we will update this page and revise the effective date. Please review the latest version before continuing to use the app.</p>
+
+  <h2>10. Contact us</h2>
+  <p>Email: <a href="mailto:ushio0314@163.com">ushio0314@163.com</a><br>
+  Support and FAQ: <a href="support.html">Technical Support</a></p>
+
+<footer>© 2026 YueXu · <a href="index.html">Home</a> · <a href="terms.html">Terms of Use</a></footer></section>
 </main>
+<script>
+(function () {
+  var titles = {
+      "zh-Hans": "隐私政策 · 月序",
+      "zh-Hant": "隱私政策 · 月序",
+      "en": "Privacy Policy · YueXu"
+  };
+  var blocks = Array.prototype.slice.call(document.querySelectorAll('[data-lang-block]'));
+  var buttons = Array.prototype.slice.call(document.querySelectorAll('[data-set-lang]'));
+
+  function setLanguage(lang, persist) {
+    if (!titles[lang]) lang = 'zh-Hans';
+    document.documentElement.lang = lang;
+    blocks.forEach(function (block) {
+      block.hidden = block.getAttribute('data-lang-block') !== lang;
+    });
+    buttons.forEach(function (button) {
+      var active = button.getAttribute('data-set-lang') === lang;
+      button.classList.toggle('active', active);
+      button.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
+    document.title = titles[lang];
+    if (persist) {
+      try { localStorage.setItem('yuexuLegalLanguage', lang); } catch (e) {}
+    }
+  }
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      setLanguage(button.getAttribute('data-set-lang'), true);
+    });
+  });
+
+  var saved = null;
+  try { saved = localStorage.getItem('yuexuLegalLanguage'); } catch (e) {}
+  if (!saved) {
+    var code = (navigator.language || 'zh-Hans').toLowerCase();
+    if (code.indexOf('zh-hant') === 0 || code.indexOf('zh-tw') === 0 || code.indexOf('zh-hk') === 0 || code.indexOf('zh-mo') === 0) {
+      saved = 'zh-Hant';
+    } else if (code.indexOf('zh') === 0) {
+      saved = 'zh-Hans';
+    } else {
+      saved = 'en';
+    }
+  }
+  setLanguage(saved, false);
+})();
+</script>
 </body>
 </html>

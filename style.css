@@ -59,3 +59,20 @@ footer { color: var(--tertiary); font-size: 13px; margin-top: 48px; }
 .tag { display: inline-block; background: var(--wash); color: var(--coral-dark);
   border-radius: 999px; padding: 3px 10px; font-size: 12px; margin-right: 6px; }
 @media (max-width: 520px) { .wrap { padding: 36px 18px 60px; } h1 { font-size: 28px; } .card { padding: 20px; } }
+
+.lang-switch {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  margin: -14px 0 28px;
+}
+.lang-switch a, .lang-switch button {
+  border: 1px solid var(--line); border-radius: 999px;
+  padding: 5px 12px; font-size: 12px; line-height: 1.4;
+  background: var(--surface); color: var(--secondary);
+  font-family: inherit; cursor: pointer;
+}
+.lang-switch a.active, .lang-switch button.active,
+.lang-switch a[aria-current="page"] {
+  background: var(--wash); color: var(--coral-dark);
+  border-color: rgba(200,86,74,.3);
+}
+[hidden] { display: none !important; }
